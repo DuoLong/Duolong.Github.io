@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-25T05:19:40.960Z</updated>
+  <updated>2017-04-25T05:17:17.301Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,73 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2017/04/25/php/"/>
-    <id>http://yoursite.com/2017/04/25/php/</id>
-    <published>2017-04-25T05:20:22.648Z</published>
-    <updated>2017-04-25T05:19:40.960Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="php"><a href="#php" class="headerlink" title="php"></a>php</h1><p>标签（空格分隔）： 基础知识部分</p>
-<hr>
-<p>#基础知识点</p>
-<p>###随机数的生成和选择语句的写法</p>
-<ul>
-<li><p>生成随机数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$num = rand(1,50);//获取1至50的随机数</div></pre></td></tr></table></figure>
-<p>*选择语句的语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">$info = &quot;&quot;;//提示信息</div><div class="line">switch($num)&#123;</div><div class="line">    case 1:</div><div class="line">		$info = &quot;恭喜你！中了一等奖！&quot;;</div><div class="line">		break;</div><div class="line">	case 2:</div><div class="line">		$info = &quot;恭喜你！中了二等奖！&quot;;</div><div class="line">		break;</div><div class="line"> 	case 3:</div><div class="line">		$info = &quot;恭喜你！中了三等奖！&quot;;</div><div class="line">		break;</div><div class="line">	default:</div><div class="line">        $info = &quot;很遗憾！你没有中奖！&quot;;</div><div class="line">&#125;</div><div class="line"> echo $info; //输出是否中奖</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="深入理解break-补坑"><a href="#深入理解break-补坑" class="headerlink" title="深入理解break,补坑"></a>深入理解break,补坑</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">//A例子</div><div class="line">$num = 2;</div><div class="line">$sum  = 10; </div><div class="line">switch($num)&#123;</div><div class="line">    case 1:</div><div class="line">		$sum = $sum  + 10;</div><div class="line">		break;</div><div class="line">	case 2:</div><div class="line">		$sum = $sum  + 10;</div><div class="line">		break;</div><div class="line"> 	case 3:</div><div class="line">		$sum = $sum  + 10;</div><div class="line">		break;</div><div class="line">	default:</div><div class="line">		$sum = $sum  + 10;</div><div class="line">&#125;</div><div class="line"> echo &quot;A例子的值是：&quot;.$sum.&quot;&lt;br /&gt;&quot;;</div><div class="line">//B例子</div><div class="line">$num = 2;</div><div class="line">$sum  = 10; </div><div class="line">switch($num)&#123;</div><div class="line">	case 1:</div><div class="line">		$sum = $sum  + 10;</div><div class="line">	case 2:</div><div class="line">		$sum = $sum  + 10;</div><div class="line">	case 3:</div><div class="line">		$sum = $sum  + 10;</div><div class="line">	default:</div><div class="line">		$sum = $sum  + 10;</div><div class="line">&#125;</div><div class="line"> echo &quot;B例子的值是：&quot;.$sum.&quot;&lt;br /&gt;&quot;;</div><div class="line">?&gt;</div></pre></td></tr></table></figure>
-<ul>
-<li>结果：20,40<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">40?why</div><div class="line">A例子中，输出$sum值为20，B例子中，输出$sum值为40。在A例子中，执行了第二个case ，$sum变为20，然后break跳出了switch，去执行其他的任务。在B例子中，执行了第二个case , $sum变为20，由于没有break，继续执行第三个case，然后又执行default，$sum变为了40。</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>###数组</p>
-<p>####下标和内容的语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">$students = array(</div><div class="line">&apos;2010&apos;=&gt;&apos;令狐冲&apos;,</div><div class="line">&apos;2011&apos;=&gt;&apos;林平之&apos;,</div><div class="line">&apos;2012&apos;=&gt;&apos;曲洋&apos;,</div><div class="line">&apos;2013&apos;=&gt;&apos;任盈盈&apos;,</div><div class="line">&apos;2014&apos;=&gt;&apos;向问天&apos;,</div><div class="line">&apos;2015&apos;=&gt;&apos;任我行&apos;,</div><div class="line">&apos;2016&apos;=&gt;&apos;冲虚&apos;,</div><div class="line">&apos;2017&apos;=&gt;&apos;方正&apos;,</div><div class="line">&apos;2018&apos;=&gt;&apos;岳不群&apos;,</div><div class="line">&apos;2019&apos;=&gt;&apos;宁中则&apos;,</div><div class="line">);//10个学生的学号和姓名，用数组存</div></pre></td></tr></table></figure></p>
-<ul>
-<li>加段解释<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">下标 =&gt; 值</div><div class="line">这是php的下标，和每一个数组元素的写法！</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>####php循环结构foreach的应用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//使用循环结构遍历数组,获取学号和姓名  </div><div class="line">foreach($students as $v)</div><div class="line">&#123; </div><div class="line">    echo $v;//输出（打印）姓名</div><div class="line">	echo &quot;&lt;br /&gt;&quot;;</div><div class="line">&#125;</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//使用循环结构遍历数组,获取学号和姓名  </div><div class="line">foreach($students as $key =&gt;$v)</div><div class="line">&#123; </div><div class="line">    echo $key.&quot;:&quot;.$v;//输出（打印）学号：姓名</div><div class="line">	echo &quot;&lt;br /&gt;&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>*加段解释<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">只取值，不取下标</div><div class="line">foreach (数组 as 值)&#123;  //执行的任务   &#125;</div><div class="line">同时取下标和值</div><div class="line">foreach (数组 as 下标 =&gt; 值)&#123;    //执行的任务  &#125;</div></pre></td></tr></table></figure></p>
-<p>####php数组的嵌套<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line"> $students = array(</div><div class="line">&apos;2010&apos;=&gt;array(&apos;令狐冲&apos;,&quot;59&quot;),</div><div class="line">&apos;2011&apos;=&gt;array(&apos;林平之&apos;,&quot;44&quot;),</div><div class="line">&apos;2012&apos;=&gt;array(&apos;曲洋&apos;,&quot;89&quot;),</div><div class="line">&apos;2013&apos;=&gt;array(&apos;任盈盈&apos;,&quot;92&quot;),</div><div class="line">&apos;2014&apos;=&gt;array(&apos;向问天&apos;,&quot;93&quot;),</div><div class="line">&apos;2015&apos;=&gt;array(&apos;任我行&apos;,&quot;87&quot;),</div><div class="line">&apos;2016&apos;=&gt;array(&apos;冲虚&apos;,&quot;58&quot;),</div><div class="line">&apos;2017&apos;=&gt;array(&apos;方正&apos;,&quot;74&quot;),</div><div class="line">&apos;2018&apos;=&gt;array(&apos;岳不群&apos;,&quot;91&quot;),</div><div class="line">&apos;2019&apos;=&gt;array(&apos;宁中则&apos;,&quot;90&quot;),</div><div class="line">);//10个学生的学号、姓名、分数，用数组存储</div><div class="line"> </div><div class="line">foreach($students as $key=&gt;$val)</div><div class="line">&#123; //使用循环结构遍历数组,获取学号 </div><div class="line">     echo $key; //输出学号</div><div class="line">	 echo &quot;:&quot;;</div><div class="line">	 //循环输出姓名和分数</div><div class="line">	 foreach($val as $v)</div><div class="line">	&#123;</div><div class="line">		echo $v; </div><div class="line">	 &#125;</div><div class="line">	 echo &quot;&lt;br /&gt;&quot;;</div><div class="line">&#125;</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<ul>
-<li>费个话<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">这可不是三维的嵌套，=&gt;分界线，前面下标，永远不变啊！</div><div class="line">后面呢，数组中的内容不同的内容用逗号隔开。</div><div class="line">嵌套在php中也是有着层层递进的效果, students(数组)以key(下标)=&gt;val（内容）形式循环，从而实现了下标和内容的解释，val as v，将数组中的值输出，这是固定的语法~~~！！！记住！</div><div class="line">至于结果呢？就不写了！</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>####php当前行复制,删除快捷方式</p>
-<ul>
-<li><p>复制：  crtl+alt+↓</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">可能是我的设置问题，本机一按界面就反过来了。但是的确是对的！！</div><div class="line">```   </div><div class="line"> * 删除：   crtl+d</div><div class="line"> ####php上下行互换</div><div class="line"> * 上下行互换：alt+↑/↓</div><div class="line"> 看效果：</div></pre></td></tr></table></figure>
-<p>echo”world”;<br>echo”hello”;<br>……<br>互换后<br>echo”hello”;<br>echo”world”;<br>就是这么神奇！</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">####php行注释和块注释</div><div class="line">* 行注释 ctrl+/</div><div class="line">* 块注释 ctrl+shift+/</div><div class="line">###代码提示助手</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>代码提示：alt+/<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">*个人感觉这个功能非常6，可以解决新学一种语言时想不起某个关键词的尴尬了。不仅仅可以提示关键词，还可以提示函数!</div><div class="line">####调出查找面板，和实现查找内容替换</div></pre></td></tr></table></figure></p>
-<p>调出查找面板 ctrl+f<br>优良特性：可以查找到程序中的一切内容。可以向前查找，向后查找；<br>all全局查找。<br>同时可以进行替换。replace<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">####保存快捷键</div><div class="line">ctrl+s</div><div class="line">###整个项目检索的快捷面板</div></pre></td></tr></table></figure></p>
-<p>整个项目检索：ctrl+h<br>打开直接双击<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">###代码格式化</div></pre></td></tr></table></figure></p>
-<p>ctrl+shift+f<br>可能会冲突，直接source-&gt;format就好<br>要注重代码的整洁啊，你如此干净利落怎能容忍代码的混乱不堪！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">###关闭当前文件</div></pre></td></tr></table></figure></p>
-<p>ctrl+s-&gt;ctrl+w<br>其实ctrl+w是关闭当前文件夹，但是不先保存在关闭，会弹出是否保存框，所以利落的你还是保存再关闭直接快捷键吧！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">##最牛逼的快捷键</div><div class="line">###忘记快捷键的查找</div></pre></td></tr></table></figure></p>
-<p>ctrl+shift+l<br>吊炸天<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">###自己设置快捷键的方法</div></pre></td></tr></table></figure></p>
-<p>Pereference-&gt;Editors-&gt;Keys<br>```</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;php&quot;&gt;&lt;a href=&quot;#php&quot; class=&quot;headerlink&quot; title=&quot;php&quot;&gt;&lt;/a&gt;php&lt;/h1&gt;&lt;p&gt;标签（空格分隔）： 基础知识部分&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;#基础知识点&lt;/p&gt;
-&lt;p&gt;###随机数的生成和选择语句的写法&lt;/p&gt;
-&lt;
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title></title>
