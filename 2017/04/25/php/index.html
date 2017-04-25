@@ -5,15 +5,17 @@
   
   <title>琅琊阁</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="琅琊榜首，江左梅郎">
-<meta property="og:type" content="website">
+  <meta name="description" content="php标签（空格分隔）： 基础知识部分  #基础知识点 ###随机数的生成和选择语句的写法  生成随机数 1$num = rand(1,50);//获取1至50的随机数 *选择语句的语法： 123456789101112131415$info = &amp;quot;&amp;quot;;//提示信息switch($num)&amp;#123;    case 1:		$info = &amp;quot;恭喜你！中了一等奖！&amp;q">
+<meta name="keywords">
+<meta property="og:type" content="article">
 <meta property="og:title" content="琅琊阁">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/04/25/php/index.html">
 <meta property="og:site_name" content="琅琊阁">
-<meta property="og:description" content="琅琊榜首，江左梅郎">
+<meta property="og:description" content="php标签（空格分隔）： 基础知识部分  #基础知识点 ###随机数的生成和选择语句的写法  生成随机数 1$num = rand(1,50);//获取1至50的随机数 *选择语句的语法： 123456789101112131415$info = &amp;quot;&amp;quot;;//提示信息switch($num)&amp;#123;    case 1:		$info = &amp;quot;恭喜你！中了一等奖！&amp;q">
+<meta property="og:updated_time" content="2017-04-25T05:19:40.960Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="琅琊阁">
-<meta name="twitter:description" content="琅琊榜首，江左梅郎">
+<meta name="twitter:description" content="php标签（空格分隔）： 基础知识部分  #基础知识点 ###随机数的生成和选择语句的写法  生成随机数 1$num = rand(1,50);//获取1至50的随机数 *选择语句的语法： 123456789101112131415$info = &amp;quot;&amp;quot;;//提示信息switch($num)&amp;#123;    case 1:		$info = &amp;quot;恭喜你！中了一等奖！&amp;q">
   
     <link rel="alternative" href="/atom.xml" title="琅琊阁" type="application/atom+xml">
   
@@ -27,9 +29,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -41,8 +40,8 @@
           rootUrl: '/',
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -230,9 +229,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-php" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-php" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2017/04/25/php/" class="article-date">
@@ -296,84 +293,198 @@
 
       
       
-    </div>
-    
-    <div class="article-info article-info-index">
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()" title="关闭">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
       
-      
-
-      
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-yzt仿淘宝登陆页面" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/04/23/yzt仿淘宝登陆页面/" class="article-date">
-      <time datetime="2017-04-23T14:58:13.038Z" itemprop="datePublished">2017-04-23</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h1 id="yzt仿淘宝登陆页面"><a href="#yzt仿淘宝登陆页面" class="headerlink" title="yzt仿淘宝登陆页面"></a>yzt仿淘宝登陆页面</h1><hr>
-<h2 id="标签：-小练"><a href="#标签：-小练" class="headerlink" title="标签： 小练"></a>标签： 小练</h2><h3 id="准备工具-："><a href="#准备工具-：" class="headerlink" title="准备工具 *："></a><em>准备工具 *</em>：</h3><ul>
-<li>开发工具WebStorm</li>
-<li>Bootstrap文件包</li>
-<li>网页界面尺寸图、背景及图标</li>
-</ul>
-          
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-        <p class="article-more-link">
-          <a  href="/2017/04/23/yzt仿淘宝登陆页面/#more">星途大海 >></a>
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/04/25/php/"></a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Allen 的个人博客">Allen</a></p>
+        <p><span>发布时间:</span>2017年04月25日 - 05时20分</p>
+        <p><span>最后更新:</span>2017年04月25日 - 13时19分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/04/25/php/" title="">http://yoursite.com/2017/04/25/php/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/04/25/php/　　作者: Allen" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
-      
-      <div class="clearfix"></div>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
     </div>
-    
-  </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/04/23/yzt仿淘宝登陆页面/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#php"><span class="toc-number">1.</span> <span class="toc-text">php</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#深入理解break-补坑"><span class="toc-number">1.0.1.</span> <span class="toc-text">深入理解break,补坑</span></a></li></ol></li></ol></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
 
 
 
 
 
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 
 
-  
-  
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2017/04/25/php/" data-title="" data-url="http://yoursite.com/2017/04/25/php/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"null"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/04/23/yzt仿淘宝登陆页面/" title="上一篇: ">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/25/php/">php</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/23/yzt仿淘宝登陆页面/">yzt仿淘宝登陆页面</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
