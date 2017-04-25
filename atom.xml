@@ -151,7 +151,7 @@
     <link href="http://yoursite.com/2017/04/23/yzt%E4%BB%BF%E6%B7%98%E5%AE%9D%E7%99%BB%E9%99%86%E9%A1%B5%E9%9D%A2/"/>
     <id>http://yoursite.com/2017/04/23/yzt仿淘宝登陆页面/</id>
     <published>2017-04-23T14:58:13.038Z</published>
-    <updated>2017-04-25T06:52:23.565Z</updated>
+    <updated>2017-04-25T06:55:40.403Z</updated>
     
     <content type="html"><![CDATA[<h3 id="准备工具-："><a href="#准备工具-：" class="headerlink" title="准备工具 *："></a><em>准备工具 *</em>：</h3><ul>
 <li>开发工具WebStorm</li>
@@ -273,7 +273,7 @@
     </summary>
     
     
-      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+      <category term="html;css;js" scheme="http://yoursite.com/tags/html-css-js/"/>
     
   </entry>
   
