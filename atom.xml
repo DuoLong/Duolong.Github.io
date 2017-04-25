@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-25T06:41:09.200Z</updated>
+  <updated>2017-04-25T06:47:02.728Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://yoursite.com/2017/04/23/yzt%E4%BB%BF%E6%B7%98%E5%AE%9D%E7%99%BB%E9%99%86%E9%A1%B5%E9%9D%A2/"/>
     <id>http://yoursite.com/2017/04/23/yzt仿淘宝登陆页面/</id>
     <published>2017-04-23T14:58:13.038Z</published>
-    <updated>2017-04-25T06:41:09.200Z</updated>
+    <updated>2017-04-25T06:47:02.728Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="准备工具-："><a href="#准备工具-：" class="headerlink" title="准备工具 *："></a><em>准备工具 *</em>：</h3><ul>
+    <content type="html"><![CDATA[<h2 id="tags-cs"><a href="#tags-cs" class="headerlink" title="tags: cs"></a>tags: cs</h2><h2 id="tags-js"><a href="#tags-js" class="headerlink" title="tags: js"></a>tags: js</h2><h3 id="准备工具-："><a href="#准备工具-：" class="headerlink" title="准备工具 *："></a><em>准备工具 *</em>：</h3><ul>
 <li>开发工具WebStorm</li>
 <li>Bootstrap文件包</li>
 <li>网页界面尺寸图、背景及图标</li>
@@ -133,7 +133,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;准备工具-：&quot;&gt;&lt;a href=&quot;#准备工具-：&quot; class=&quot;headerlink&quot; title=&quot;准备工具 *：&quot;&gt;&lt;/a&gt;&lt;em&gt;准备工具 *&lt;/em&gt;：&lt;/h3&gt;&lt;ul&gt;
+      &lt;h2 id=&quot;tags-cs&quot;&gt;&lt;a href=&quot;#tags-cs&quot; class=&quot;headerlink&quot; title=&quot;tags: cs&quot;&gt;&lt;/a&gt;tags: cs&lt;/h2&gt;&lt;h2 id=&quot;tags-js&quot;&gt;&lt;a href=&quot;#tags-js&quot; class=&quot;headerlink&quot; title=&quot;tags: js&quot;&gt;&lt;/a&gt;tags: js&lt;/h2&gt;&lt;h3 id=&quot;准备工具-：&quot;&gt;&lt;a href=&quot;#准备工具-：&quot; class=&quot;headerlink&quot; title=&quot;准备工具 *：&quot;&gt;&lt;/a&gt;&lt;em&gt;准备工具 *&lt;/em&gt;：&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;开发工具WebStorm&lt;/li&gt;
 &lt;li&gt;Bootstrap文件包&lt;/li&gt;
 &lt;li&gt;网页界面尺寸图、背景及图标&lt;/li&gt;
@@ -142,7 +142,7 @@
     </summary>
     
     
-      <category term="html cs js" scheme="http://yoursite.com/tags/html-cs-js/"/>
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
     
   </entry>
   
