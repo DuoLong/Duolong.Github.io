@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>琅琊阁</title>
+  <title>python爬学校教务系统 | 琅琊阁</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="琅琊榜首，江左梅郎">
-<meta property="og:type" content="website">
-<meta property="og:title" content="琅琊阁">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="#写爬虫进入教务系统获取信息的几个板块：  导入所需的库 模拟登陆 主函数 获取网页用户的各科成绩信息 计算并将成绩信息保存为excel表格模式所需工具 pycharm anaconda2 (Python2.7) phantomJS     pycharm是python的IDE，安装即可  anaconda2和Python2.7区别： anconda2里面集成了很多关于python科学计算的第三方">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python爬学校教务系统">
+<meta property="og:url" content="http://yoursite.com/2017/04/25/Python爬虫爬取学校教务系统/index.html">
 <meta property="og:site_name" content="琅琊阁">
-<meta property="og:description" content="琅琊榜首，江左梅郎">
+<meta property="og:description" content="#写爬虫进入教务系统获取信息的几个板块：  导入所需的库 模拟登陆 主函数 获取网页用户的各科成绩信息 计算并将成绩信息保存为excel表格模式所需工具 pycharm anaconda2 (Python2.7) phantomJS     pycharm是python的IDE，安装即可  anaconda2和Python2.7区别： anconda2里面集成了很多关于python科学计算的第三方">
+<meta property="og:image" content="http://a2.qpic.cn/psb?/V12yrBV94VbMPL/RPIFQ6a.0VblRu6WbFS4*LfaPi4dpzMN37Cyf0fSFps!/m/dLEAAAAAAAAAnull&bo=UQROAAAAAAADBzk!&rf=photolist&t=5">
+<meta property="og:updated_time" content="2017-04-25T07:16:43.981Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="琅琊阁">
-<meta name="twitter:description" content="琅琊榜首，江左梅郎">
+<meta name="twitter:title" content="python爬学校教务系统">
+<meta name="twitter:description" content="#写爬虫进入教务系统获取信息的几个板块：  导入所需的库 模拟登陆 主函数 获取网页用户的各科成绩信息 计算并将成绩信息保存为excel表格模式所需工具 pycharm anaconda2 (Python2.7) phantomJS     pycharm是python的IDE，安装即可  anaconda2和Python2.7区别： anconda2里面集成了很多关于python科学计算的第三方">
+<meta name="twitter:image" content="http://a2.qpic.cn/psb?/V12yrBV94VbMPL/RPIFQ6a.0VblRu6WbFS4*LfaPi4dpzMN37Cyf0fSFps!/m/dLEAAAAAAAAAnull&bo=UQROAAAAAAADBzk!&rf=photolist&t=5">
   
     <link rel="alternative" href="/atom.xml" title="琅琊阁" type="application/atom+xml">
   
@@ -27,9 +31,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -41,8 +42,8 @@
           rootUrl: '/',
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -232,109 +233,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-Unity 3d" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/04/25/Unity 3d/" class="article-date">
-      <time datetime="2017-04-25T07:13:39.609Z" itemprop="datePublished">2017-04-25</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/25/Unity 3d/">Unity 3d</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>##准备工具:</p>
-<ul>
-<li>unity</li>
-<li>practice包</li>
-</ul>
-<p>##参考网站：</p>
-<blockquote>
-<p> <a href="http://www.imooc.com/learn/313" target="_blank" rel="external">http://www.imooc.com/learn/313</a></p>
-</blockquote>
-<p>##游戏设计</p>
-<h3 id="包的使用"><a href="#包的使用" class="headerlink" title="包的使用"></a>包的使用</h3><blockquote>
-<p>首先将包放到Editor里面，打开Unity,导入相应的包；</p>
-<p>###脚本代码路径添加：（图片添加有些问题，大家参考文字叙述吧！）</p>
-</blockquote>
-<ul>
-<li>添加路径<blockquote>
-<p>assert-&gt;scirpt-&gt;右击-&gt;create&gt;c#文件：<br>总共四个文件,main,move,weapon,bullet;(千万注意添加后不能随意改变文件名，否则不匹配无法实现效果)</p>
-</blockquote>
-</li>
-<li><p>main/move添加位置：</p>
-<blockquote>
-<blockquote>
-<p>首先点击assert中的screen-&gt;打开里面的test文件。<br>这时候人物出现，也可以进行玩家视野的调控了。这里按说应该是可以直接将main/move拖进Player的，可是我的拖进去运行一遍自动消失，不知道别人的会不会有这个问题，然后，我用的另外一种办法,直接点击player,<br>Add Component  main/move,这两个c#脚本添加完成了。</p>
-</blockquote>
-</blockquote>
-</li>
-<li><p>weapon添加<br>然后添加weapon到player下的（打开到底）shot-point里面；</p>
-</li>
-<li>bullet添加<br>直接在assert出搜索installbullet,添加进去。<h3 id="脚本代码的编写："><a href="#脚本代码的编写：" class="headerlink" title="脚本代码的编写："></a>脚本代码的编写：</h3>#main脚本代码：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">using UnityEngine;</div><div class="line">using System.Collections;</div><div class="line"></div><div class="line">public class main : MonoBehaviour &#123;</div><div class="line"></div><div class="line">   </div><div class="line">    public float walkSpeed;</div><div class="line">    // Use this for initialization</div><div class="line">    void Start()</div><div class="line">    &#123;</div><div class="line">        walkSpeed = 5.0f;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    // Update is called once per frame  </div><div class="line">    void Update()</div><div class="line">    &#123;</div><div class="line">        Vector3 direction = Input.GetAxis(&quot;Horizontal&quot;) * transform.right +</div><div class="line">                            Input.GetAxis(&quot;Vertical&quot;) * transform.forward;</div><div class="line"></div><div class="line">        transform.position += walkSpeed * Time.deltaTime * direction;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>#move脚本代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">using UnityEngine;</div><div class="line">using System.Collections;</div><div class="line"></div><div class="line">public class move : MonoBehaviour &#123;</div><div class="line"> 	public Animator animator;</div><div class="line"></div><div class="line">    private Vector3 lastPosition;</div><div class="line">    private float Speed;</div><div class="line">    private float Angle;</div><div class="line">    // Use this for initialization</div><div class="line">    void Start()</div><div class="line">    &#123;</div><div class="line">        lastPosition = transform.position;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    // Update is called once per frame</div><div class="line">    void Update()</div><div class="line">    &#123;</div><div class="line">        Vector3 Velocity = (transform.position - lastPosition) / Time.deltaTime;</div><div class="line">        Vector3 localVelocity = transform.InverseTransformDirection(Velocity);</div><div class="line">        localVelocity.y = 0;</div><div class="line">        Speed = localVelocity.magnitude;</div><div class="line">//        Transform the angle to 0 ~ 2*pi </div><div class="line">        Angle = (HorizontalAngle(localVelocity) + 360f) % 360;</div><div class="line"></div><div class="line">        animator.SetFloat(&quot;Speed&quot;, Speed);</div><div class="line">        animator.SetFloat(&quot;Angle&quot;, Angle);</div><div class="line"></div><div class="line">        lastPosition = transform.position;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">//    return the angle is between -pi ~ +pi</div><div class="line">    float HorizontalAngle(Vector3 localVelocity)</div><div class="line">    &#123;</div><div class="line">        float angle = Mathf.Atan2(localVelocity.z, localVelocity.x) * Mathf.Rad2Deg;</div><div class="line">        return angle;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><img src="http://a1.qpic.cn/psb?/V12yrBV94VbMPL/H5S8y3qdxhx*SQLHTtuv.bIzRW5g3oGPj9UCWkk6G0M!/m/dPgAAAAAAAAAnull&amp;bo=ggKrAQAAAAAFBw4!&amp;rf=photolist&amp;t=5" alt="此处输入图片的描述"></p>
-<p>#bullet脚本代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">using UnityEngine;</div><div class="line">using System.Collections;</div><div class="line"></div><div class="line">public class bullet : MonoBehaviour &#123;</div><div class="line">   public float speed;</div><div class="line">   public float distance;</div><div class="line">	// Use this for initialization</div><div class="line">	void Start () &#123;</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	// Update is called once per frame</div><div class="line">	void Update () </div><div class="line">	&#123;</div><div class="line">		transform.position += transform.forward * speed * Time.deltaTime;</div><div class="line">		distance -= speed *Time.deltaTime;</div><div class="line">		if(distance &lt; 0)</div><div class="line">			Destroy(gameObject);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>#weapon脚本代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">using UnityEngine;</div><div class="line">using System.Collections;</div><div class="line"></div><div class="line">public class weapon : MonoBehaviour &#123;</div><div class="line"></div><div class="line">    public GameObject bulletPrefab;</div><div class="line">    public float frequency;</div><div class="line">    private bool firing;</div><div class="line">    private float lastFiringTime;</div><div class="line">	// Use this for initialization</div><div class="line">	void Start ()</div><div class="line">    &#123;</div><div class="line">		lastFiringTime = Time.time;</div><div class="line">        frequency = 10;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	// Update is called once per frame</div><div class="line">	void Update ()</div><div class="line">    &#123;</div><div class="line">        //鼠标的监听</div><div class="line">		if(Input.GetMouseButtonDown(0))</div><div class="line">			firing = true;</div><div class="line">		if(Input.GetMouseButtonUp(0))</div><div class="line">			firing =false;</div><div class="line">        if (Time.time &gt; lastFiringTime+1/frequency)</div><div class="line">        &#123;</div><div class="line">            if (firing)</div><div class="line">            &#123;</div><div class="line">                GameObject fire = Instantiate(bulletPrefab, transform.position, transform.rotation) as GameObject;</div><div class="line">            &#125;</div><div class="line">            lastFiringTime = Time.time;</div><div class="line">        &#125;</div><div class="line"></div><div class="line"></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>遇到问题</p>
-<ul>
-<li>我这边每次把相应的代码拖到Player，运行一遍人物属性那自动就删了，同学的就没事，后来知道用Add Component可以直接添加所要加入的c#代码，<br>并且不会因为运行而出现自动清除问题。如果你遇到相同问题可以试一下第二种方法。<br><img src="http://a2.qpic.cn/psb?/V12yrBV94VbMPL/LKkyDghrtneoNiq8BwLsvYQpsy6BDkYf5xoJUT6gXs8!/m/dLEAAAAAAAAAnull&amp;bo=3QHHAAAAAAAFBz8!&amp;rf=photolist&amp;t=5" alt="此处输入图片的描述"></li>
-<li>上课时我的电脑出了些问题，所以上课时部分代码打错，后来进行了修改。</li>
-<li>我这边每次新打开文件，以前除了代码，做的其他东西，如人物运动的设置就会出现问题，就会自动消失。我问了下同学，他们每次重新打开都不会消失，于是我就都做完，直接打包给学长了。同学都是win10，我感觉不是系统问题。并且这次作业较为简单，所以我就没再去重装软件。只是重新下载并导入practice,发现还是那样。就直接做完了。</li>
-<li>人物的运动出了不少问题，但就去慢慢调节尝试就好了。90度一个方位，就好了。<br>###感悟：<br>第一次接触游戏开发,很新奇，原来那些场景的开发初学者还可以直接导入应用，要不然入手难度就大多了。要注意一些细节的控制。很多时候因为一丝的疏忽导致很大的错误。得不偿失。</li>
-</ul>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/unity/">unity</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Python爬虫爬取学校教务系统" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Python爬虫爬取学校教务系统" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2017/04/25/Python爬虫爬取学校教务系统/" class="article-date">
@@ -350,12 +249,23 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/25/Python爬虫爬取学校教务系统/">python爬学校教务系统</a>
+    <h1 class="article-title" itemprop="name">
+      python爬学校教务系统
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -517,169 +427,205 @@ for species in species_list:
 
       
       
-    </div>
-    
-    <div class="article-info article-info-index">
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="打赏，支持一下">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()" title="关闭">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
       
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-测试" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/04/25/测试/" class="article-date">
-      <time datetime="2017-04-25T06:53:12.826Z" itemprop="datePublished">2017-04-25</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
     
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/25/测试/">测试而已</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h3 id="准备工具-："><a href="#准备工具-：" class="headerlink" title="准备工具 *："></a><em>准备工具 *</em>：</h3><ul>
-<li>开发工具WebStorm</li>
-<li>Bootstrap文件包</li>
-<li>网页界面尺寸图、背景及图标</li>
-</ul>
-          
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2017/04/25/测试/#more">星途大海 >></a>
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/04/25/Python爬虫爬取学校教务系统/">python爬学校教务系统</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Allen 的个人博客">Allen</a></p>
+        <p><span>发布时间:</span>2017年04月25日 - 07时13分</p>
+        <p><span>最后更新:</span>2017年04月25日 - 15时16分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/04/25/Python爬虫爬取学校教务系统/" title="python爬学校教务系统">http://yoursite.com/2017/04/25/Python爬虫爬取学校教务系统/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/04/25/Python爬虫爬取学校教务系统/　　作者: Allen" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-yzt仿淘宝登陆页面" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/04/23/yzt仿淘宝登陆页面/" class="article-date">
-      <time datetime="2017-04-23T14:58:13.038Z" itemprop="datePublished">2017-04-23</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/23/yzt仿淘宝登陆页面/">yzt仿淘宝登陆页面</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h3 id="准备工具-："><a href="#准备工具-：" class="headerlink" title="准备工具 *："></a><em>准备工具 *</em>：</h3><ul>
-<li>开发工具WebStorm</li>
-<li>Bootstrap文件包</li>
-<li>网页界面尺寸图、背景及图标</li>
-</ul>
-          
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a  href="/2017/04/23/yzt仿淘宝登陆页面/#more">星途大海 >></a>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
         </p>
-      
-      <div class="clearfix"></div>
     </div>
-    
-  </div>
+
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/04/25/测试/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          测试而已
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/04/25/Unity 3d/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Unity 3d</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#所需工具"><span class="toc-number">1.</span> <span class="toc-text">所需工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定位单个元素"><span class="toc-number">2.</span> <span class="toc-text">定位单个元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#定位多个元素"><span class="toc-number">3.</span> <span class="toc-text">定位多个元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主函数"><span class="toc-number">4.</span> <span class="toc-text">主函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取网页用户的各科成绩信息"><span class="toc-number">5.</span> <span class="toc-text">获取网页用户的各科成绩信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#计算并写入表格"><span class="toc-number">6.</span> <span class="toc-text">计算并写入表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#特别需要注意的地方："><span class="toc-number">7.</span> <span class="toc-text">特别需要注意的地方：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#两个IT术语BUG和DEBUG："><span class="toc-number">8.</span> <span class="toc-text">两个IT术语BUG和DEBUG：</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
 
 
 
 
 
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 
 
-  
-  
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2017/04/25/Python爬虫爬取学校教务系统/" data-title="python爬学校教务系统" data-url="http://yoursite.com/2017/04/25/Python爬虫爬取学校教务系统/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"null"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/04/25/测试/" title="上一篇: 测试而已">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/04/25/Unity 3d/" title="下一篇: Unity 3d">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/04/25/Unity 3d/">Unity 3d</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/25/Python爬虫爬取学校教务系统/">python爬学校教务系统</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/25/测试/">测试而已</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/23/yzt仿淘宝登陆页面/">yzt仿淘宝登陆页面</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
